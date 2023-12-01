@@ -7,8 +7,10 @@ import java.util.List;
 public class OrdenacaoPessoa {
 //atributo
     private List<Pessoa> pessoaList;
+    private OrdenacaoPessoa ordenacaoPessoa;
 
     public OrdenacaoPessoa() {
+
         this.pessoaList = new ArrayList<>();
     }
 
@@ -27,5 +29,10 @@ public class OrdenacaoPessoa {
         Collections.sort(pessoasPorAltura, new ComparatorPorAltura());
         return pessoasPorAltura;
     }
+
+
 }
+
+
+
 
